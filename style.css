@@ -1,1 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.location {
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #666;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+.work-list, .writing-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.work-item-left {
+    display: flex;
+    align-items: center;
+}
+
+.work-list img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.company-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.role {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.fa-chevron-down {
+    color: #666;
+}
+
+.writing-list li {
+    margin-bottom: 20px;
+}
+
+.writing-list h3 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.writing-list p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    padding: 2px 4px;
+}

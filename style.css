@@ -28,13 +28,13 @@ a:hover {
 }
 
 .location {
-    color: #666;
+    color: #6E7783;
     margin-top: 5px;
     font-size: 0.9em;
 }
 
 .location a {
-    color: #666;
+    color: #6E7783;
     text-decoration: none;
 }
 
@@ -51,9 +51,27 @@ a:hover {
 }
 
 .social-links a {
-    color: #666;
-    margin-right: 15px;
-    font-size: 1.2em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    border: 1px solid #ccc;
+    color: #6E7783;
+    margin-right: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+    color: #333;
+}
+
+.social-links i {
+    font-size: 18px;
 }
 
 .bio p {

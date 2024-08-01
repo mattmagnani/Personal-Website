@@ -57,7 +57,7 @@ a:hover {
     width: 30px;
     height: 30px;
     border-radius: 25%;
-    border: 1px solid #ccc;
+    border: 1px solid #e6e4e4;
     color: #6E7783;
     margin-right: 2px;
     transition: all 0.3s ease;
@@ -70,50 +70,83 @@ a:hover {
     color: #333;
 }
 
-.social-links i {
-    font-size: 18px;
+.social-links iconify-icon {
+    font-size: 20px;
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bio p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #424C59;
 }
 
-.work-list, .writing-list {
+.work-list {
     list-style-type: none;
     padding: 0;
+    border-top: 2.5px dotted #e5e5e5;  /* Add top border to the entire list */
 }
 
-.work-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
+.work-item {
+    border-bottom: 2.5px dotted #e5e5e5;  /* Change to dotted border */
+    padding: 15px 0;  /* Add some padding */
 }
 
-.work-item-left {
+.work-item-header {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    /* Remove the border from here if it exists */
 }
 
-.work-list img {
+.work-item-header img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
 }
 
 .company-name {
-    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
     margin-right: 10px;
 }
 
 .role {
+    font-size: 12px;
     color: #666;
-    font-size: 0.9em;
+    font-weight: 350;
+    margin-right: auto;
 }
 
-.fa-chevron-down {
+.work-item-header .iconify {
+    transition: transform 0.3s ease;
+}
+
+.work-item-content {
     color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.work-item-content p {
+    padding: 0 0 15px 45px;
+    margin: 0;
+}
+
+.work-item.active .work-item-header .iconify {
+    transform: rotate(180deg);
+}
+
+.work-item.active .work-item-content {
+    max-height: 500px; /* Adjust this value based on your content */
+}
+
+.work-item-header:hover {
+    background-color: #f9f9f9;  /* Light grey background on hover */
 }
 
 .writing-list li {

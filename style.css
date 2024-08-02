@@ -48,6 +48,8 @@ a:hover {
 
 .social-links {
     margin-top: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .social-links a {
@@ -92,20 +94,32 @@ a:hover {
 
 .work-item {
     border-bottom: 2.5px dotted #e5e5e5;  /* Change to dotted border */
-    padding: 15px 0;  /* Add some padding */
+    padding: 7px 0;  /* Add some padding */
 }
 
 .work-item-header {
     display: flex;
     align-items: center;
     cursor: pointer;
-    /* Remove the border from here if it exists */
+    padding: 0px 0;
+    position: relative;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.work-item.active .dropdown-arrow {
+    transform: rotate(180deg);
 }
 
 .work-item-header img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 15px;
+    border-radius: 25%;
 }
 
 .company-name {
@@ -128,6 +142,7 @@ a:hover {
 .work-item-content {
     color: #666;
     max-height: 0;
+    font-size: 14px;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
@@ -146,7 +161,7 @@ a:hover {
 }
 
 .work-item-header:hover {
-    background-color: #f9f9f9;  /* Light grey background on hover */
+    background-color: transparent;  /* Remove the background color change on hover */
 }
 
 .writing-list li {

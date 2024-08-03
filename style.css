@@ -1,10 +1,16 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
+    display: flex;
     color: #000000;
     max-width: 660px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 150px;
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
@@ -162,37 +168,114 @@ a:hover {
 
 .work-item-header:hover {
     background-color: transparent;  /* Remove the background color change on hover */
+    text-decoration: none;
+}
+
+.writing-list {
+    list-style-type: none;
+    padding: 0;
 }
 
 .writing-list li {
-    margin-bottom: 20px;
+    border-top: 1px dashed #e0e0e0;
+    padding: 5px 0;
+}
+
+.writing-list li:last-child {
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.writing-list a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;  /* Changed from block to inline-block */
+    cursor: pointer;
 }
 
 .writing-list h3 {
-    margin-bottom: 5px;
-    font-size: 1.1em;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+    color: #000;
+}
+
+.writing-list a:hover h3 {
+    background-color: transparent;  /* Remove the background color change on hover */
+    text-decoration: none;
 }
 
 .writing-list p {
-    color: #666;
     margin: 0;
-    font-size: 0.9em;
+    color: #666;
+    font-size: 12px;
+    cursor: default;  /* Ensures the cursor doesn't change over the paragraph */
 }
 
 footer {
-    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Light gray background */
     text-align: center;
-    color: #666;
-    font-size: 0.9em;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #6e7783; /* The color you mentioned earlier */
+    border-top: .5px solid #e0e0e0; /* Subtle top border */
 }
 
-kbd {
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
+footer p {
+    margin: 0;
+}
+
+footer kbd {
+    background-color: #fff;
+    border: 1px solid #ffffff;
     border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-    color: #333;
+    box-shadow: inset 0 -1px 0 #d1d5da;
+    color: #444d56;
     display: inline-block;
-    font-size: 0.85em;
-    padding: 2px 4px;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 3px 5px;
+    vertical-align: middle;
+}
+
+#command-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 500px;
+}
+
+#command-menu input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#command-menu .menu-items button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#command-menu .menu-items button:hover {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
 }

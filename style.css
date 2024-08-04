@@ -199,6 +199,53 @@ a {
     text-decoration: none;
 }
 
+.projects {
+    margin-top: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-item p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.project-item .project-link {
+    color: #0066cc;
+    text-decoration: none;
+    border-bottom: 1px dotted #0066cc;
+}
+
+.project-item .project-link:hover {
+    color: #004080;
+    border-bottom: 1px solid #004080;
+}
+
+.project-item a[href$=".pdf"]:after {
+    content: " (PDF)";
+    font-size: 0.8em;
+    color: #666;
+}
+
 .writing-list {
     list-style-type: none;
     padding: 0;

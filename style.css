@@ -15,21 +15,25 @@ main {
 
 header {
     position: relative;
-    padding-top: 20px; /* Add some space at the top */
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .profile-image {
-    position: absolute;
-    top: 50px; /* Align with the top padding of the header */
-    right: 20px; /* Move the image 20px from the right edge */
-    width: 125px; /* Adjust as needed */
+    width: 125px;
     height: 125px;
     object-fit: cover;
-    border-radius: 70px; /* Rounded corners */
+    border-radius: 70px;
+    align-self: flex-end;
+    margin-left: 20px;
 }
 
-.header-content {
-    margin-right: 180px; /* Create space for the image */
+.header-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -80,7 +84,7 @@ a {
 }
 
 .social-links {
-    margin-top: 15px;
+    margin-top: auto;
     display: flex;
     align-items: center;
 }

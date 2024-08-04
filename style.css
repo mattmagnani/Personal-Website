@@ -13,6 +13,25 @@ main {
     flex: 1;
 }
 
+header {
+    position: relative;
+    padding-top: 20px; /* Add some space at the top */
+}
+
+.profile-image {
+    position: absolute;
+    top: 50px; /* Align with the top padding of the header */
+    right: 80px; /* Move the image 20px from the right edge */
+    width: 125px; /* Adjust as needed */
+    height: 125px;
+    object-fit: cover;
+    border-radius: 70px; /* Rounded corners */
+}
+
+.header-content {
+    margin-right: 180px; /* Create space for the image */
+}
+
 h1 {
     font-size: 2.0em;
     margin-bottom: 0;
@@ -25,18 +44,26 @@ h2 {
 }
 
 a {
-    color: #0366d6;
     text-decoration: none;
-}
+    color: #000;
+    transition: color 0.3s ease;
+  }
 
-a:hover {
+  a.underline {
     text-decoration: underline;
-}
+    color: inherit;
+  }
+  
+  a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
 
 .location {
     color: #6E7783;
     margin-top: 5px;
     font-size: 0.9em;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .location a {
@@ -88,6 +115,7 @@ a:hover {
 }
 
 .bio p {
+    margin-top: 20px;
     margin-bottom: 15px;
     color: #424C59;
 }

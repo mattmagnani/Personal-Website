@@ -21,7 +21,7 @@ header {
 .profile-image {
     position: absolute;
     top: 50px; /* Align with the top padding of the header */
-    right: 80px; /* Move the image 20px from the right edge */
+    right: 20px; /* Move the image 20px from the right edge */
     width: 125px; /* Adjust as needed */
     height: 125px;
     object-fit: cover;

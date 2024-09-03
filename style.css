@@ -127,11 +127,11 @@ a {
 .work-list {
     list-style-type: none;
     padding: 0;
-    border-top: 2.5px dotted #e5e5e5;  /* Add top border to the entire list */
+    border-top: 1px dashed #e5e5e5;  /* Add top border to the entire list */
 }
 
 .work-item {
-    border-bottom: 2.5px dotted #e5e5e5;  /* Change to dotted border */
+    border-bottom: 1px dashed #e5e5e5;  /* Change to dotted border */
     padding: 7px 0;  /* Add some padding */
 }
 
@@ -248,6 +248,40 @@ a {
     content: " (PDF)";
     font-size: 0.8em;
     color: #666;
+}
+
+.investments {
+    margin-top: 30px;
+}
+
+.investment-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.investment-table th,
+.investment-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.investment-table th {
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+@media (max-width: 600px) {
+    .investment-table {
+        font-size: 12px;
+    }
+
+    .investment-table th,
+    .investment-table td {
+        padding: 8px 5px;
+    }
 }
 
 .writing-list {

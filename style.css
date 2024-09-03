@@ -284,6 +284,11 @@ a {
     }
 }
 
+.disclaimer{
+    font-size: 14px;
+    color: #000000;
+}
+
 .writing-list {
     list-style-type: none;
     padding: 0;
